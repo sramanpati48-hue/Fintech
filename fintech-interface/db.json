@@ -1,0 +1,159 @@
+{
+  "users": [
+    {
+      "_id": "ffd2205cc19f34d90371fccf",
+      "email": "test@test.com",
+      "password": "$2b$12$K0dS6pHfusIgbnbSBV2hZefnnGTvt0tnTERNvkbF9tHpwpGvvxH/y",
+      "homeCurrency": "INR",
+      "balances": {},
+      "createdAt": "2026-03-06T16:24:05.040Z"
+    },
+    {
+      "_id": "e88b7ec0693ea9059f1631e8",
+      "email": "sramanpati48@gmail.com",
+      "password": "google_115746147849418872511",
+      "homeCurrency": "INR",
+      "balances": {},
+      "createdAt": "2026-03-06T16:24:45.859Z",
+      "firstName": "Sraman",
+      "lastName": "Pati",
+      "name": "Sraman Pati",
+      "phone": "9674636512",
+      "country": "India",
+      "city": "Kolkata",
+      "location": "Kolkata, India",
+      "avatarColor": "from-orange-500 to-amber-500",
+      "initials": "SP",
+      "profileComplete": true,
+      "updatedAt": "2026-03-06T17:42:56.175Z"
+    },
+    {
+      "_id": "6f60423b2bbfcf935bd8232f",
+      "email": "test@globepay.com",
+      "password": "$2b$12$4nXFjq1PZIhjlJmJFkzE2uzdupZ4SbCxUOEMHdlJQ9zFOnDXBersS",
+      "homeCurrency": "INR",
+      "balances": {},
+      "createdAt": "2026-03-06T17:18:11.856Z"
+    },
+    {
+      "_id": "69753236b02df5cc8da9fe47",
+      "email": "fxtest@globepay.com",
+      "password": "$2b$12$LHupaH2paxoy9aic0AhKa.XDSlO1t/KBEV0VtLqQ4s.YAtugvbD9.",
+      "homeCurrency": "INR",
+      "balances": {},
+      "createdAt": "2026-03-06T17:18:17.315Z"
+    },
+    {
+      "_id": "688b0cf774bda6a54d634900",
+      "email": "fxtest2@globepay.com",
+      "password": "$2b$12$DRT168aFRLgPWIOlDVE8aewXY1Pr6GEA8fbK8lordg1O.ORjXQFai",
+      "homeCurrency": "INR",
+      "balances": {
+        "INR": 94601.215
+      },
+      "createdAt": "2026-03-06T17:18:22.891Z"
+    },
+    {
+      "_id": "221c9d2d9e1fe09878c00410",
+      "email": "smartlogin@test.com",
+      "password": "$2b$12$niUsn.YKWmD.vjnJU1sS4.SQ/hZBS.ISdfniAii3Ia7meq.ycgjga",
+      "homeCurrency": "USD",
+      "balances": {},
+      "createdAt": "2026-03-06T17:40:24.882Z",
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "phone": "+1234567890",
+      "country": "US",
+      "city": "NYC",
+      "profileComplete": true,
+      "updatedAt": "2026-03-06T17:40:25.173Z"
+    },
+    {
+      "_id": "c21632268fed9cb342a5daff",
+      "email": "smartflow@test.com",
+      "password": "$2b$12$xQIcuFIJ4ozgJLIaVetzLOzSnHi29STvZGMqAIxZUlbCFEFW/3S8.",
+      "homeCurrency": "USD",
+      "balances": {},
+      "createdAt": "2026-03-06T17:40:32.183Z",
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "phone": "+1234567890",
+      "country": "US",
+      "city": "NYC",
+      "profileComplete": true,
+      "updatedAt": "2026-03-06T17:40:47.031Z"
+    },
+    {
+      "_id": "35884e24ed0db083b75ee6b9",
+      "email": "test@example.com",
+      "password": "$2b$12$f6/56zTHw/FEKIKdqm6BXu4bzsx8QinEKHqQSh9c.VfZbTfN0LS2O",
+      "homeCurrency": "INR",
+      "balances": {},
+      "createdAt": "2026-03-07T14:30:20.849Z"
+    }
+  ],
+  "transactions": [
+    {
+      "_id": "80844f36b9a69f3bd0e551be",
+      "userId": "688b0cf774bda6a54d634900",
+      "merchantId": "m001",
+      "localAmount": 50,
+      "localCurrency": "EUR",
+      "homeAmount": 5398.785,
+      "homeCurrency": "INR",
+      "fxRate": 106.38,
+      "fee": 79.785,
+      "status": "completed",
+      "createdAt": "2026-03-06T17:19:02.741Z"
+    }
+  ],
+  "merchants": [
+    {
+      "_id": "m001",
+      "name": "Café de Paris",
+      "supportedCurrencies": [
+        "EUR",
+        "USD"
+      ]
+    },
+    {
+      "_id": "m002",
+      "name": "Tokyo Electronics",
+      "supportedCurrencies": [
+        "JPY",
+        "USD"
+      ]
+    },
+    {
+      "_id": "m003",
+      "name": "London Books Ltd",
+      "supportedCurrencies": [
+        "GBP",
+        "EUR"
+      ]
+    },
+    {
+      "_id": "tokyo-cafe-001",
+      "name": "Tokyo Café ☕",
+      "supportedCurrencies": [
+        "JPY",
+        "USD"
+      ]
+    },
+    {
+      "_id": "berlin-bakery",
+      "name": "Berlin Bakery 🥨",
+      "supportedCurrencies": [
+        "EUR",
+        "USD"
+      ]
+    },
+    {
+      "_id": "nyc-deli",
+      "name": "NYC Deli 🥪",
+      "supportedCurrencies": [
+        "USD"
+      ]
+    }
+  ]
+}
