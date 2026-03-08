@@ -67,7 +67,7 @@ const DashboardPage: React.FC = () => {
       color: CATEGORY_COLORS[i % CATEGORY_COLORS.length],
       percentage: Math.round((amount / total) * 100),
     }));
-  }, [allTxns]);
+  }, [allTxns, CATEGORY_COLORS]);
 
   // Build wallet list from live balances map
   const FLAG_MAP: Record<string, string> = { USD: "🇺🇸", EUR: "🇪🇺", GBP: "🇬🇧", JPY: "🇯🇵", INR: "🇮🇳", AUD: "🇦🇺", CAD: "🇨🇦", CHF: "🇨🇭", SGD: "🇸🇬", AED: "🇦🇪" };
