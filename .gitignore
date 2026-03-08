@@ -12,5 +12,6 @@ yarn-debug.log*
 .DS_Store
 *.tgz
 FINTECH zip/
+FINTECH zip.zip
 React App_files/
 React App.html
