@@ -25,7 +25,8 @@ const SendMoneyPage: React.FC = () => {
   const { user } = useAuth();
   const homeCurrency = user?.homeCurrency || "INR";
   const { rates, loading: ratesLoading } = useFXRates(homeCurrency);
-  const { quote: _quote, receipt: _receipt, loading: convertLoading, error: _convertError, getQuote, confirm, reset } = useConvert();
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { loading: convertLoading, getQuote, confirm, reset, ...convertRest } = useConvert();
   const { toast } = useToast();
 
   const [step, setStep] = useState(1);

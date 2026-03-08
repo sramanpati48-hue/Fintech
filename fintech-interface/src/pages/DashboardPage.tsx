@@ -52,8 +52,8 @@ const DashboardPage: React.FC = () => {
   }, [allTxns]);
 
   // ── Derive spending categories from live transactions ──
-  const CATEGORY_COLORS = ["#14b8a6", "#06b6d4", "#22d3ee", "#2dd4bf", "#99f6e4"];
   const spendingCategories = React.useMemo(() => {
+    const CATEGORY_COLORS = ["#14b8a6", "#06b6d4", "#22d3ee", "#2dd4bf", "#99f6e4"];
     const byCur: Record<string, number> = {};
     allTxns.forEach((tx: ApiTransaction) => {
       const label = tx.merchantId || `FX → ${tx.localCurrency}`;
@@ -67,7 +67,7 @@ const DashboardPage: React.FC = () => {
       color: CATEGORY_COLORS[i % CATEGORY_COLORS.length],
       percentage: Math.round((amount / total) * 100),
     }));
-  }, [allTxns, CATEGORY_COLORS]);
+  }, [allTxns]);
 
   // Build wallet list from live balances map
   const FLAG_MAP: Record<string, string> = { USD: "🇺🇸", EUR: "🇪🇺", GBP: "🇬🇧", JPY: "🇯🇵", INR: "🇮🇳", AUD: "🇦🇺", CAD: "🇨🇦", CHF: "🇨🇭", SGD: "🇸🇬", AED: "🇦🇪" };
